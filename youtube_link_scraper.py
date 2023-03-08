@@ -9,7 +9,7 @@ youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=api_key)
 # Call the API to get the playlist ID of the channel's uploads playlist
 channel_response = youtube.channels().list(
     part='contentDetails',
-    id='THE_ID_OF_THE_CHANNELL_YOU_ARE_SCRAPING'
+    id='THE_ID_OF_THE_CHANNEL_YOU_ARE_SCRAPING'
 ).execute()
 
 # print(channel_response)
